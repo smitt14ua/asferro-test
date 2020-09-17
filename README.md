@@ -1,12 +1,14 @@
 # asferro-test
 
-At first you must to initialize DB.  
+**Skip steps 1 and 2 if you use Docker-compose.**  
+## 1. Initialize DB. 
 For example:  
 ```sql
 CREATE DATABASE asferro;
 ```
 Where `asferro` is your database name.
-Next you must to set/update configs in (in production you must use gitignored file):  
+## 2. Next you must to set/update configs  
+**In production you must use gitignored file!*
 ```
 web/config/db.php
 ```
@@ -21,7 +23,7 @@ return [
     // ...
 ];
 ```
-Next you must to apply all migrations via command  
+## 3. Next you must to apply all migrations via command  
 ```
 php yii migrate
 ```
